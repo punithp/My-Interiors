@@ -1,4 +1,4 @@
-body
+﻿body
 {
 	background-image:
    
@@ -53,6 +53,12 @@ body
 	
 }
 
+.active, .menu-bar ul li .sub-menu-1 ul li:hover
+{
+	background-color: #2bab0d;
+		border-radius: 3px;
+}
+
 .menu-bar .fa 
 {
 	margin-right: 8px;
@@ -62,6 +68,20 @@ body
 .sub-menu-1
 {
 	display:none;
+}
+
+.sub-menu-2
+{
+	display:none;
+}
+
+.menu-bar ul li:hover .sub-menu-2
+{
+	display: block;
+	position: absolute;
+	background: rgb(0,100,0);
+	margin-top: 15px;
+	margin-left: -15px;
 }
 
 .menu-bar ul li:hover .sub-menu-1
@@ -89,5 +109,37 @@ body
 	background: transparent;
 	border-radius: 0;
 	text-align: left;
+	
+}
+
+
+
+.menu-bar ul li:hover .sub-menu-2 ul
+{
+	display:block;
+	margin: 10px;
+	
+}
+
+
+.menu-bar ul li:hover .sub-menu-2 ul li
+{
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px dotted #fff;
+	background: transparent;
+	border-radius: 0;
+	text-align: left;
+	
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+	border-bottom:none;
+}
+
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+	color:#b2ff00;
 	
 }
