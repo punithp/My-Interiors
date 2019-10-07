@@ -24,7 +24,9 @@ body
   box-shadow: 0 15px 25px rgba(0,0,0,.5);
   border-radius: 10px;
 }
-
+.menu
+{
+	background: rgb(0,100,0);
 .box h2
 {
 	
