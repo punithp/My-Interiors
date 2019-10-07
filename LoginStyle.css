@@ -2,7 +2,7 @@ body
 {
     padding: 0;
 	margin: 0;
-	background-image:url("Nature1.jpg");
+	background-image:Nature1.jpg;
    
    background-size: cover;
    background-position: center;
