@@ -198,6 +198,7 @@ color: black;
 
 .bottom-container
 {
+	height: 20px;
 	margin-bottom:0 px;
 	background: rgb(0,100,0);
 }
