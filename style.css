@@ -195,3 +195,9 @@ color: black;
 	color:#b2ff00;
 
 }
+
+.bottom-container
+{
+	margin-bottom:0 px;
+	background: rgb(0,100,0);
+}
