@@ -1,12 +1,13 @@
 body
 {
-	background-image:
 
    background-size: cover;
    background-position: center;
    box-sizing: border-box;
    font-family  : sans-serif;
    background-color: #EAF6F6;
+   text-align:center;
+   
 }
 
 
@@ -196,27 +197,44 @@ color: black;
 
 }
 
+
+.middle-container
+{
+margin-bottom:50px;
+font-family: 'Merriweather', ;
+}
+
+
 .bottom-container
 {
-	height: 20px;
-	margin-bottom:0 px;
-	background: rgb(0,100,0);
+	margin-bottom: 0px;
+	
 }
 
 .img
 {
 	border-radius: 10px;
-	border-radius: 50%;
+	border-radius: 60%;
   padding: 5px;
   width: 250px;
-	
+  margin-top:20px;
+  margin-bottom:50px;	
 }
+
+/*
+.img {
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  padding: 5px;
+  width: 250px;
+  padding-left: 400px;
+}
+*/
+
 
 .img:hover {
   box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
-.sofa-img
-{
-   padding-left: 400px;	
-}
+
+
