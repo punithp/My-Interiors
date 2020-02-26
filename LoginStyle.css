@@ -1,59 +1,261 @@
 body
 {
-    padding: 0;
-	margin: 0;
-	background-image:Nature1.jpg;
-   background-color: #EAF6F6;
+
    background-size: cover;
    background-position: center;
    box-sizing: border-box;
    font-family  : sans-serif;
-  background-color: blue; 
+   background-color: #EAF6F6;
+   text-align:center;
+   color:#40514E;
 }
 
-.box
+*
 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%)
-  width: 300px;
-	height:300px;
-  padding: 40px;
-  background-color: green;;
-  box-sizing: border-box;
-  box-shadow: 0 15px 25px rgba(0,0,0,.5);
-  border-radius: 10px;
+
+	padding: 0;
+	margin: 0;
 }
-.menu
+
+
+.menu-bar
 {
 	background: rgb(0,100,0);
-}
-.box h2
-{
-	
-	margin: 0 0 30px;
-	padding: 0;
 	text-align: center;
-	color: black;
-	
 }
-.box .inputBox
+
+.menu-bar ul
 {
-	position: relative;
+	display: inline-flex;
+	list-style: none;
+	color: white;
+}
+
+.menu-bar ul li
+{
+	width: 120px;
+	margin : 15px;
+	padding :15px;
+
+
+}
+
+.menu-bar ul li a
+{
+	text-decoration: none;
+	color: #fff;
+}
+
+ .menu-bar ul li:hover
+{
+		background-color: #2bab0d;
+		border-radius: 3px;
+		border-radius: 3px;
+
+}
+
+.menu-bar ul li .sub-menu-1 ul li:hover
+{
+	background-color: #2bab0d;
+		border-radius: 3px;
+}
+
+.menu-bar .fa
+{
+	margin-right: 8px;
+
+}
+
+.sub-menu-1
+{
+	display:none;
+}
+
+.sub-menu-2
+{
+	display:none;
 }
 
 
-.box .inputBox input
+.sub-menu-3
 {
-	width: 100%
-	padding: 10px 0;
-	font-size: 16px;
-	color: black;
-	margin-bottom: 30px;
-	border: none;
-	outline: none;
+	display:none;
+}
+
+
+.menu-bar ul li:hover .sub-menu-1
+{
+	display: block;
+	position: absolute;
+	background: rgb(0,100,0);
+	margin-top: 15px;
+	margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+	display:block;
+	margin: 10px;
+
+}
+
+
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px dotted #fff;
 	background: transparent;
-	border-bottom: 1px solid white;
-	
+	border-radius: 0;
+	text-align: left;
+
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+  border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+color: black;
+
+}
+
+.menu-bar ul li:hover .sub-menu-2
+{
+	display: block;
+	position: absolute;
+	background: rgb(0,100,0);
+	margin-top: 15px;
+	margin-left: -15px;
+}
+
+
+.menu-bar ul li:hover .sub-menu-2 ul
+{
+	display:block;
+	margin: 10px;
+
+}
+
+
+.menu-bar ul li:hover .sub-menu-2 ul li
+{
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px dotted #fff;
+	background: transparent;
+	border-radius: 0;
+	text-align: left;
+
+}
+.menu-bar ul li:hover .sub-menu-2 ul li:last-child
+{
+  border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-3
+{
+	display: block;
+	position: absolute;
+	background: rgb(0,100,0);
+	margin-top: 15px;
+	margin-left: -15px;
+}
+
+
+.menu-bar ul li:hover .sub-menu-3 ul
+{
+	display:block;
+	margin: 10px;
+
+}
+
+
+.menu-bar ul li:hover .sub-menu-3 ul li
+{
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px dotted #fff;
+	background: transparent;
+	border-radius: 0;
+	text-align: left;
+
+}
+
+
+.menu-bar ul li:hover .sub-menu-3 ul li:last-child
+{
+	border-bottom:none;
+}
+
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+	color:#b2ff00;
+
+}
+
+
+.middle-container
+{
+
+font-family: 'Merriweather', ;
+margin: 100px, 0px;
+
+}
+
+.txt
+{
+margin:auto;
+}
+
+
+
+p{
+line-height: 2;	
+}
+
+.s1
+{
+	color:#66BFBF;
+	line-height: 2;
+	bottom: 300%;
+}
+
+
+.bottom-container
+{
+	bottom: 0px;
+	right:0px;
+	left:0px;
+	font-family: 'Merriweather', ;
+	background-color: green;
+	color:#EAF6F6;	
+}
+
+
+
+
+.footer-link
+{
+	margin: 150px 0 150px 0;
+}
+
+.img
+{
+	border-radius: 10px;
+	border-radius: 60%;
+  padding: 5px;
+  width: 250px;
+  margin-top:20px;
+  margin-bottom:50px;	
+}
+
+
+
+
+.img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
