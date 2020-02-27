@@ -3,20 +3,18 @@
 	top: 10%;
 	left: 10%;
 	width : 150px;
-    height:400px;
+        height:400px;
 	background-color: white;
-	
-    
 	padding: 40px;
 }
 
 
 .right-box
 {
-	top: 10%;
-	right: 70%;
+	margin-top: 10%;
+	margin-right: 89%;
 	width : 150px;
-    height:400px;
+        height:400px;
 	background-color: white;
 	
 }
