@@ -33,6 +33,11 @@ body{
   text-align: center;
  }
 
+.header .home{
+  text-align: left;
+ }
+
+
 .form{
   padding: 30px 40px;
   
