@@ -53,28 +53,27 @@
    
    
 	<div class="box">
-		<form name="myForm" action="Home.html" onsubmit="validateForm()" method="post">
+		<form name="form"  id="form" method="post">
 			<div class="inputBox">
-						<i class="fa fa-user" aria-hidden="true">&nbsp&nbsp&nbsp </i><input type="text" name="uname" placeholder="User Name">
+						<i class="fa fa-user" aria-hidden="true">&nbsp&nbsp&nbsp </i><input id="username" type="text" name="username" placeholder="User Name" >
+						<small> Error message </small>
 			</div>
 			<div class="inputBox">
-	     				<i class="fa fa-unlock" aria-hidden="true">&nbsp&nbsp&nbsp </i><input type="password" name="Pass" placeholder="Password">
+	     				<i class="fa fa-unlock" aria-hidden="true">&nbsp&nbsp&nbsp </i><input id="password" type="password" name="password" placeholder="Password" >
+						<small> Error message </small>
 						
 			</div>
-			<input class="btn" id="btn1" type="submit" name="" value="LogIn" > 
+			<button class="btn" >LogIn  </button> 
 		    <button class="back" > Back </button> <br>
 			<div  class="psw">
 			<label>
               <input type="checkbox" checked="checked" name="remember"> Remember me
             </label>
 			&nbsp  <a href="Forgot.html">  Forgot password? </a> </div>
-			
-			
-			 
 		</form>	
 		
 	  </div>
 	</div>
 
-
+<script type="text/javascript" src="js/Login.js"> </script>
 </body>
