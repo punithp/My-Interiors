@@ -1,63 +1,60 @@
 
 
 
-document.getElementById("btn1").click = function ()
-{
-	var name= admin;
-	var passwrd = Admin123;
-	var uname = document.getElementById("username").value;
-	var pass = document.getElementById("password").value;
+const form = document.getElementById('form');
+const username = document.getElementById('username');
+const password = document.getElementById('password');
+
+form.addEventListener('submit', (e) => {
 	
-	if (uname == name && pass == passwrd )
-	{
-		alert ("Login successfully");
-        window.location.href = "H:\punITH\Project\MyInteriors\Home.html"; // Redirecting to Home page.
-        return false;
-	}
-	else
-	{
-		alert("Invalid Username/Password");
-	}
+	e.preventDefault();
 	
+	checkInputs();
 	
-	if(uname == "" || uname == null )
-	{
-		alert("Please enter the valid user name");
-		return false;
-	}
+});
+
+
+function checkInputs(){
 	
-	 else if (password == null || password == "") 
-	 {
-       alert("Please enter the password.");
-       return false;
+	const usernameValue = username.value.trim();
+    const passwordValue = password.value.trim();
+  
+  
+if(usernameValue === '')
+     {
+       setErrorFor(username, 'Username cannot be blank');
+	   
+     } 
+  else{
+       setSuccessFor(username); 
      }
-	
+  
+
+  
+  if(passwordValue === '')
+     {
+       setErrorFor(password, 'Password cannot be blank');
+	   
+     } 
+  else{
+       setSuccessFor(password); 
+     }
+}
+
+function setErrorFor(input, message){
+  const formControl= input.parentElement;
+  const small = formControl.querySelector('small');
+  
+  small.innerText= message
+  
+  formControl.className = 'inputBox error';
+  
 }
 
 
 
-
-
-
-
-/*
-function formValidation()
+function setSuccessFor(input)
 {
-
-const name = document.getElementById('name');
-const Password = document.getElementById('password');
-const Form = document.getElementById('myForm');
-
-if(name.value = "" )
-	{
-		messages.push('Name is required');
-	}
-
-if(Password.value.length < 6)
-	{
-		messages.push("Password must be greater than 6 Characters");
-	}
-	
+	const formControl= input.parentElement;
+	formControl.className = 'inputBox success';
 }
-
-*/
